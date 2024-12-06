@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/webstorm-icon-logo.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WS playground</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header class="container">
+    <nav class="navbar navbar-expand-lg navbar-collapse-md position-fixed p-0 pt-3">
+        <ul>
+            <li><a href="#about" class="active">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+<main id="app">
+
+    <audio id="background-music" autoplay loop>
+        <source src="public/background-music.mp3" type="audio/mpeg">
+        <source src="public/background-music.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <section id="about" style="overflow: hidden; position: sticky; top: 0;">
+        <div class="container vh-100 d-flex align-items-center">
+            <div class="row w-100 d-flex justify-content-between align-items-baseline" style="flex-wrap: wrap-reverse;">
+                <!-- Text Section -->
+                <div class="col-lg-5 col-md-6 col-sm-12 ">
+                    <p id="about-text">
+
+                    </p>
+                </div>
+
+                <!-- Image Section -->
+                <div class="col-lg-3 col-md-6 col-sm-12  " style="width: fit-content;position: relative;">
+                    <img class="image-1 " src="public/Ellipse%201.svg" alt="Rising sun">
+                    <img class="image-2 " src="public/télécharger%20(1)-Photoroom%201.png" alt="David">
+                    <div class="japanese-text" id="japanese-text">
+                        <span>美は細部に宿る</span>
+                        <span>美は細部に宿る</span>
+                        <span>美は細部に宿る</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="slide-section" style="position: sticky;top:0;z-index: 2;background: white" id="me">
+        <div class="container vh-100 d-flex overflow-hidden">
+            <div class="row w-100 ">
+                <div class="col-md-8 h-auto d-flex align-items-end flex-column">
+                    <div class="col d-flex flex-column justify-content-end">
+                        <h1 class="header-text">Who am I?</h1>
+                        <p class="info-text">Hi, I'm Yahya El-Hilaly, a developer with a deep passion for both
+                            technology and the arts. My work is inspired by the timeless beauty of Japan and classical
+                            art, which shapes the way I approach coding and design.</p>
+                    </div>
+                    <div class="row">
+                        <div class=" d-flex justify-content-end">
+                            <img src="public/earing.png" class="img-fluid" alt="girl with pearl earing">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 vh-100 ">
+                    <img src="public/wave.png" class="img-fluid" alt="wave">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide-section" style="position: sticky;top:0;z-index: 3;background: white" id="projects">
+        <div class="container vh-100 d-flex justify-content-center flex-column" style="flex-wrap: wrap;">
+            <h1 class="header-text ">See my work </h1>
+
+            <div class="grid-container">
+                <div class="grid-item grid-item1"></div>
+                <div class="grid-item grid-item2"></div>
+                <div class="grid-item grid-item3"></div>
+                <div class="grid-item grid-item4"></div>
+                <div class="grid-item grid-item5 d-flex justify-content-center">
+                    <span>Explore more</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="slide-section" style="position: sticky;top:0;z-index: 4;background: white" id="contact">
+        <div class="container vh-100 d-flex flex-column align-items-center justify-content-center"
+             style="flex-wrap: wrap;">
+            <h2 class="header-text">Contact Me</h2>
+            <p class="info-text">If you have any questions or want to collaborate, feel free to reach out!</p>
+            <form class="contact-form" action="mailto:yahya.elhilaly00@gmail.com" method="POST" enctype="text/plain">
+                <div class="w-100 d-flex flex-row justify-content-between">
+
+
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                </div>
+                <div class="form-group w-100">
+
+                    <textarea class="w-100 " style="resize: none" id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send</button>
+            </form>
+        </div>
+    </section>
+    <section class="" style="position: sticky;top:0;z-index: 5;background: black" id="footer">
+        <div class="container-fluid " style="">
+            <footer class="bg-dark text-center text-white">
+
+                <div class="container p-4 pb-0">
+
+                    <section class="mb-4">
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                        ><i class="fab fa-facebook-f"></i
+                        ></a>
+
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                        ><i class="fa-brands fa-x-twitter"></i></a>
+
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="http://yahya.elhilaly00@gmail.com" role="button"
+                        ><i class="fab fa-google"></i
+                        ></a>
+
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                        ><i class="fab fa-instagram"></i
+                        ></a>
+
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                        ><i class="fab fa-linkedin-in"></i
+                        ></a>
+
+
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/DrXeno0" role="button"
+                        ><i class="fab fa-github"></i
+                        ></a>
+                    </section>
+
+                </div>
+
+                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+
+
+                </div>
+
+            </footer>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="technologies">
+
+</footer>
+<script type="module" src="/src/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+<script>
+    const music = new Howl({
+        src: ['public/background-music.mp3', 'public/background-music.mp3'],
+        autoplay: true,
+        loop: true,
+        volume: 0.5,
+        html5: true
+    });
+</script>
+</body>
+</html>
