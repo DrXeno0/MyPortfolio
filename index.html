@@ -108,24 +108,23 @@
     <section class="slide-section" style="position: sticky;top:0;z-index: 4;background: white" id="contact">
         <div class="container vh-100 d-flex flex-column align-items-center justify-content-center"
              style="flex-wrap: wrap;">
-            <h2 class="header-text">Contact Me</h2>
-            <p class="info-text">If you have any questions or want to collaborate, feel free to reach out!</p>
-            <form class="contact-form" action="mailto:yahya.elhilaly00@gmail.com" method="POST" enctype="text/plain">
-                <div class="w-100 d-flex flex-row justify-content-between">
+            <lottie-player
+                    src="public/FloIy7zkNb.json"
+                    background="transparent"
+                    speed="1"
+                    style="width: 300px; height: 300px;"
+                    loop
+                    autoplay>
+            </lottie-player>
 
+            <h3>🚧 My Portfolio is Under Construction 🚧</h3>
+            <p>Great things take time! I'm crafting something special—stay tuned.</p>
 
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
 
-
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-                </div>
-                <div class="form-group w-100">
-
-                    <textarea class="w-100 " style="resize: none" id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Send</button>
-            </form>
+            <p>Last Update: <strong>29/01/2025</strong></p>
         </div>
     </section>
     <section class="" style="position: sticky;top:0;z-index: 5;background: black" id="footer">
@@ -185,6 +184,8 @@
 </footer>
 <script type="module" src="/src/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest"></script>
+
 <script>
     const music = new Howl({
         src: ['public/background-music.mp3', 'public/background-music.mp3'],
